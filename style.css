@@ -1,0 +1,217 @@
+*,*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    font-size: 1.5rem;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(56, 56, 56);
+
+}
+
+.container{
+    width: 90%;
+    max-width: 40rem;
+    height: 100%;
+    max-height: 80vh;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 0px rgb(255, 223, 97);
+    background: #032965;
+    color: #E7EEDB;
+    position: relative;
+
+}
+
+header{
+    width:100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:  white;
+    position: absolute;
+    top:0;
+    margin-bottom: 2rem;
+}
+.end-letters{
+    font-size: 3rem;
+    color: rgb(236, 255, 65);
+    padding-left: 2px
+}
+
+.body{
+    max-height: 15rem;
+    transform: translateY(50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+ul:empty{
+    content: '';
+    background: url('images/symbols.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    
+}
+.body-bg{
+ background: url('images/symbols.svg') no-repeat;
+background-size: contain;
+background-position: center;
+cursor: pointer;   
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    min-height: 20vh;
+}
+
+li{
+    list-style: none;
+    border: 1px solid rgb(255, 223, 97);
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(236, 255, 65);
+    transition: background-color .5s;
+    overflow-x: auto;
+    width: 100%;
+}
+
+li:hover{
+    background-color: rgb(236, 255, 65);
+    color: #032965;
+    font-weight: bold;
+}
+
+.delete{
+    cursor: pointer;
+    font-size: medium;
+}
+
+.creat-list{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    width: 70%;
+}
+form{
+    width: 70%;
+    display: flex;
+    position: relative;
+}
+input{
+    border-radius: 5px;
+    padding: .4rem .7rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 2rem;
+    background-color:  white;
+    font-weight: bold;
+    color:  #032965;
+    transition: background-color .5s;
+}
+.add-btn{
+    position: absolute;
+    font-size: medium;
+    background: transparent;
+    border: none;
+    outline: none;
+    right:0;
+    transform: translate(-100%,50%);
+    cursor: pointer;
+}
+
+input::placeholder{
+    color:  #032965;
+}
+input:focus{
+    background-color: rgb(236, 255, 65);
+}
+
+
+.filtered{
+    display: none;
+}
+.focus{
+    border:1px solid rgb(91, 255, 118);
+
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+/*media query*/
+@media only screen and (max-width: 667px) {
+
+
+body{
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    margin-top: 1.5rem;
+
+}
+.container{
+    justify-content: center;
+    max-height: 100%;
+    width: 100%;
+    max-width: 120rem;
+    border-radius: initial;
+    border: 1px solid white;
+}
+
+.body{
+    max-height: 18em;
+    padding: 0;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    transform: initial;
+}
+
+.addToDO{
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.delete{
+    cursor: pointer;
+    font-size: small;
+}
+}
