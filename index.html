@@ -1,14 +1,16 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- meta viewport tag  is necessary for the web page to be resposive, initial-scale is basically the percentage of zoom, 
     1.0 - no zoom, 2.0 - 2x zoom. 
-    maximum-scale= 1.0 mwans not allowing the user to zoom in-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    maximum-scale= 1.0- not allowing the user to zoom in
+    better set user-scalable= no to prevent user from zooming-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>To do's</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    
+
 <body>
     <div class="container">
         <header>
@@ -25,8 +27,9 @@
             <input type="text" class='add' name="add" placeholder="Add new toDo" autofocus>
             <button type="submit" class='add-btn'><i class="fas fa-plus"></i></button>
         </form>
-        
+
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
