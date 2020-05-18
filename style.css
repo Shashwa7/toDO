@@ -185,6 +185,9 @@ header{
     position: absolute;
     top: 0;
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    height: 10rem;
 }
 .container{
     justify-content: center;
@@ -192,25 +195,30 @@ header{
     width: 100%;
     max-width: 120rem;
     border-radius: initial;
-    border: 1px solid white;
+    box-shadow: initial;
 }
 
 .body{
     max-height: 15rem;
     padding: 0;
-    margin-top: 3rem;
     width: 100%;
     font-size: 1.1rem;
-    transform: initial;
+    transform: translateY(20%);
 }
 
 .addToDO{
     width: 90%;
-    margin-top: 5rem;
+    height: 5rem;
+    align-items: center;
+    margin-top: 3rem;
+    transform: translateY(20%);
 }
 
 .delete{
     cursor: pointer;
     font-size: small;
+}
+input{
+    margin-top:1rem;
 }
 }
