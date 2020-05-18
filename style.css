@@ -185,7 +185,6 @@ header{
     position: absolute;
     top: 0;
     margin-top: 1.5rem;
-
 }
 .container{
     justify-content: center;
@@ -197,9 +196,9 @@ header{
 }
 
 .body{
-    max-height: 18em;
+    max-height: 15rem;
     padding: 0;
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 100%;
     font-size: 1.1rem;
     transform: initial;
@@ -207,7 +206,7 @@ header{
 
 .addToDO{
     width: 90%;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .delete{
